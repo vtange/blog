@@ -83,8 +83,6 @@
                 </ul>
 				</section>
 			<?php endif; ?>
-
-			<?php if ( ! empty( $options['contact'] ) ) : ?>
 				<section id="contact" class="block">
 					<h2 class="section-title"><?php _e( 'Contact', 'onesie' ); ?></h2>
 					<div class="lead">
@@ -92,19 +90,17 @@
 							$contact_info = apply_filters('the_content', stripslashes_deep( $options['contact'] ) );
 							echo $contact_info;
 						?>
+                        <?php echo do_shortcode('[si-contact-form form="1"]'); ?>
 					</div>
 				</section>
-			<?php endif; ?>
-
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			© Victor Tang 2015
-			<a id="up" class="genericon genericon-collapse" href="#page" title="<?php _e( 'Back to top', 'onesie' ); ?>"></a>
+			<a id="up" class="genericon genericon-collapse" href="#page" title="<?php _e('Back to top'); ?>"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
