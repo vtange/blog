@@ -14,34 +14,22 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page">
-	<?php do_action( 'before' ); ?>
+<div class="site">
 	<header class="site-header block" role="banner">
 		<div class="site-branding">
 <!---LOGO-->
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img class="site-title" src="<?php echo esc_url( $options['logo'] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+					<img class="logo" src="<?php echo esc_url( $options['logo'] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</a>
 <!---LOGO-->
 <!---TITLE-->
 				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 <!---TITLE-->
 <!---DESCRIPTION-->
-			<h2>
+			    <h2>
 				<?php bloginfo( 'description' ); ?>
 		        </h2>
 <!---DESCRIPTION-->
-<!---TOPBAR-->
-		<?php if ( ! empty( $options['portfolio'] ) || ! empty( $options['about'] ) || ! empty( $options['contact'] ) ) : ?>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<ul>
-				<?php if ( ! empty( $options['portfolio'] ) ) { ?><li><a href="#portfolio"><?php _e( 'Portfolio', 'onesie' ); ?></a></li><?php } ?>
-				<?php if ( ! empty( $options['about'] ) ) { ?><li><a href="#about"><?php _e( 'About', 'onesie' ); ?></a></li><?php } ?>
-				<?php if ( ! empty( $options['contact'] ) ) { ?><li><a href="#contact"><?php _e( 'Contact', 'onesie' ); ?></a></li><?php } ?>
-			</ul>
-		</nav><!-- #site-navigation -->
-<!---TOPBAR-->
-	<?php endif; ?>
             
 	</header>
 
@@ -81,7 +69,7 @@
 							</figure>
 						</li>
 					<?php } ?>
-
+                </ul>
 				</section>
 			<?php endif; ?>
 
