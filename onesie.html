@@ -18,9 +18,6 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header block" role="banner">
 		<div class="site-branding">
-			<!--<?php if ( ! empty( $options['logo'] ) ) : ?>
-			<?php else : ?>
-			<?php endif; ?>-->
 <!---LOGO-->
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<img class="site-title" src="<?php echo esc_url( $options['logo'] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
@@ -31,28 +28,9 @@
 <!---TITLE-->
 <!---DESCRIPTION-->
 			<h2 class="site-description">
-			<?php if ( ! empty( $options['message'] ) ) : ?>
-				<?php
-					$message = apply_filters('the_content', stripslashes_deep( $options['message'] ) );
-					echo $message;
-			?>
-			<?php else : ?>
 				<?php bloginfo( 'description' ); ?>
-			<?php endif; ?>
 		        </h2>
 <!---DESCRIPTION-->
-<!---BUTTON-->
-            <?php if ( ! empty( $options['button_link'] ) ) : ?>
-				<a class="btn btn-big btn-translucent" href="<?php echo esc_url( $options['button_link'] ); ?>">
-				<?php if ( ! empty( $options['button_text'] ) ) : ?>
-					<?php echo esc_attr( $options['button_text'] ); ?>
-				<?php else : ?>
-					<?php _e( 'Learn More', 'onesie' ); ?>
-				<?php endif; ?>
-				</a>
-			<?php endif; ?>
-		</div>
-<!---BUTTON-->
 		<?php if ( ! empty( $options['portfolio'] ) || ! empty( $options['about'] ) || ! empty( $options['contact'] ) ) : ?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<ul>
