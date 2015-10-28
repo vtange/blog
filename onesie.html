@@ -31,6 +31,7 @@
 				<?php bloginfo( 'description' ); ?>
 		        </h2>
 <!---DESCRIPTION-->
+<!---TOPBAR-->
 		<?php if ( ! empty( $options['portfolio'] ) || ! empty( $options['about'] ) || ! empty( $options['contact'] ) ) : ?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<ul>
@@ -39,7 +40,9 @@
 				<?php if ( ! empty( $options['contact'] ) ) { ?><li><a href="#contact"><?php _e( 'Contact', 'onesie' ); ?></a></li><?php } ?>
 			</ul>
 		</nav><!-- #site-navigation -->
+<!---TOPBAR-->
 	<?php endif; ?>
+            
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
