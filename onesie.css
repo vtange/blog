@@ -13,6 +13,167 @@
      position:relative;
 }
 
+
+/*---------------------------------------------------------
+ Gallery section (_pages.scss)
+-------------------------------------------------------- */
+
+.builder-section-gallery {
+	position: relative; 
+	background-repeat: repeat;
+	background-position: center;
+}
+.builder-section-gallery.has-background {
+	padding: 52px 0 44px;
+	padding: 5.2rem 0 4.4rem;
+}
+
+.builder-gallery-title {
+	font-size: 18px;
+	font-size: 1.8rem; 
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.builder-gallery-content {
+	overflow: hidden; 
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+/*---------------------------------------------------------
+ Gallery: Captions (_pages.scss)
+-------------------------------------------------------- */
+
+.builder-gallery-item {
+	margin-bottom: 8px;
+	margin-bottom: 0.8rem;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.builder-gallery-item.has-link {
+	cursor: pointer;
+}
+.builder-gallery-captions-reveal .builder-gallery-item,
+.builder-gallery-captions-overlay .builder-gallery-item {
+	position: relative;
+}
+.builder-gallery-captions-reveal .builder-gallery-item:hover .builder-gallery-content,
+.builder-gallery-captions-overlay .builder-gallery-item .builder-gallery-content {
+	visibility: visible;
+}
+.builder-gallery-item .builder-gallery-captions-none .builder-gallery-content {
+	display: none;
+}
+.builder-gallery-captions-overlay .builder-gallery-item:hover .builder-gallery-content {
+	visibility: hidden;
+}
+
+.builder-gallery-captions-reveal .builder-gallery-content,
+.builder-gallery-captions-overlay .builder-gallery-content {
+	position: absolute;
+	top: 0;
+	padding: 32px;
+	padding: 3.2rem;
+}
+.builder-gallery-captions-reveal .builder-gallery-content,
+.builder-gallery-captions-overlay .builder-gallery-content {
+	visibility: hidden;
+	height: 100%;
+}
+.builder-gallery-captions-reveal .builder-gallery-description,
+.builder-gallery-captions-overlay .builder-gallery-description {
+	overflow: hidden;
+	height: 100%;
+}
+.builder-gallery-captions-reveal .builder-gallery-title,
+.builder-gallery-captions-overlay .builder-gallery-title {
+	overflow: hidden;
+	max-height: 100%;
+	line-height: 1.5;
+}
+
+.builder-gallery-captions-dark .builder-gallery-content {
+	color: #fff;
+	background-color: #15121e;
+	background-color: rgba(21, 18, 30, 0.70);
+}
+
+
+/*---------------------------------------------------------
+ Gallery: Images (_pages.scss)
+-------------------------------------------------------- */
+
+.builder-gallery-image {
+	height: 0;
+	background-position: center;
+	background-size: cover; 
+	line-height: 0;
+}
+.builder-gallery-aspect-square .builder-gallery-image {
+	padding-bottom: 100%;
+}
+.builder-gallery-aspect-landscape .builder-gallery-image {
+	padding-bottom: 75%;
+}
+.builder-gallery-aspect-portrait .builder-gallery-image {
+	padding-bottom: 133%;
+}
+
+
+/*---------------------------------------------------------
+ Gallery: Columns (_pages.scss)
+-------------------------------------------------------- */
+
+.builder-gallery-item {
+	float: left;
+	width: 100%;
+	margin-right: 0.8333333333%;
+}
+.builder-gallery-item:last-of-type {
+	margin-right: 0;
+}
+
+.builder-gallery-gutter {
+	width: 0.8333333333%;
+}
+
+@media screen and (min-width: 800px) {
+	.builder-gallery-columns-1 .builder-gallery-item {
+		width: 100%;
+	}
+
+	.builder-gallery-columns-2 .builder-gallery-item {
+		width: 49.5833333333%;
+	}
+	.builder-gallery-columns-2 .builder-gallery-item.last-2 {
+		margin-right: 0;
+	}
+
+	.builder-gallery-columns-3 .builder-gallery-item {
+		width: 32.7777777778%;
+	}
+	.builder-gallery-columns-3 .builder-gallery-item.last-3 {
+		margin-right: 0;
+	}
+
+	.builder-gallery-columns-4 .builder-gallery-item {
+		width: 24.375%;
+	}
+	.builder-gallery-columns-4 .builder-gallery-item.last-4 {
+		margin-right: 0;
+	}
+}
+
+
+
+
+
+
 /* =Global
 ----------------------------------------------- */
 

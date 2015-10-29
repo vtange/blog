@@ -47,41 +47,107 @@
 
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
+                    <section id="builder-section-1428806693263" class="builder-section builder-section-first builder-section-gallery builder-section-next-gallery builder-gallery-columns-2 builder-gallery-captions-reveal builder-gallery-captions-dark builder-gallery-aspect-landscape" style="">
+                            <h3 class="builder-gallery-section-title">
+                            Architecture	</h3>
+                            <div class="builder-section-content">
+                                    <div class="builder-gallery-item has-link" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/ukiyo/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/03/44159284type1-1024x683.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            Ukiyo					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>A take on housing for Japan's geek-subculture in a mixed-use structure located in the heart of Tokyo.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link last-2" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/one-stop-maker-center/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/03/7773342928_4fa97dc789_k3-1024x683.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            One-Stop Maker Center					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>An adaptive reuse of a damaged warehouse building in Cincinnati Over-the-Rhine Brewery District emphasizing integration with mass transit.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/rolling-thunder/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/DSCN2857b-1024x768.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            Rolling Thunder Studio					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>A small mixed-use development emphasizing "round-the-clock" programming and waterfront-views of Avila Beach.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link last-2" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/shrouded-pearl/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/2autofoglevEX-1024x458.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            Shrouded Pearl					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>A convention center design playing with shades of transparency and reveal at the waterfront of Oakland's Jack London Square.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/the-urban-village/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/plazae-1024x576.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            The Urban Village					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>A cultural institute showcasing San Francisco's heritage and history located in San Francisco's Presidio District near the former Crissy field.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link last-2" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/artful-resurrection/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/05/reale-1024x487.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            Artful Resurrection					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>A renovation of a historic site in San Francisco's Civic Center area into an art-centered high school while providing housing for the city's hot housing market.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                </div>
+                        </section>
 
-			<?php
-			$portfolios = $options['portfolio'];
-			if ( ! empty( $portfolios ) ) :
-			$images = explode( ',', $portfolios );
-			?>
-				<section id="portfolio" class="block">
-					<h2 class="section-title"><?php _e( 'Portfolio' ); ?></h2>
-
-					<ul class="gallery">
-
-					<?php
-						foreach( $images as $id ) {
-
-							$attachment_caption = get_post_field( 'post_excerpt', $id );
-							$attachment_title = get_post_field( 'post_title', $id );
-							$attachment_link = get_post_meta( $id, '_gpp_custom_url', true );
-							$attachment_attributes = wp_get_attachment_image_src( $id, 'large' );
-					?>
-						<li>
-							<figure>
-								<a href="<?php echo $attachment_attributes[0] ?>"<?php if ( ! empty( $attachment_title ) ) { ?> title="<?php echo $attachment_title; ?><?php if ( ! empty( $attachment_caption ) ) { ?> <small><?php echo $attachment_caption; ?></small><?php } ?><?php if ( ! empty( $attachment_link ) ) { ?> <small><?php echo esc_url( $attachment_link ); ?></small><?php } ?>"<?php } ?> class="gallery-item">
-									<?php echo wp_get_attachment_image( $id, "large" ); ?>
-								</a>
-								<figcaption>
-									<?php if ( ! empty( $attachment_title ) ) { ?><h3><?php echo $attachment_title; ?></h3><?php } ?>
-									<?php if ( ! empty( $attachment_caption ) ) { ?><span><?php echo $attachment_caption; ?></span><?php } ?>
-									<?php if ( ! empty( $attachment_link ) ) { ?><a href="<?php echo esc_url( $attachment_link ); ?>" title="<?php echo $attachment_title; ?>"><span class="genericon genericon-external"></span></a><?php } ?>
-								</figcaption>
-							</figure>
-						</li>
-					<?php } ?>
-                </ul>
-				</section>
-			<?php endif; ?>
+                    <section id="builder-section-1432695544124" class="builder-section builder-section-prev-gallery builder-section-gallery builder-section-last builder-gallery-columns-1 builder-gallery-captions-reveal builder-gallery-captions-dark builder-gallery-aspect-landscape" style="">
+                            <h3 class="builder-gallery-section-title">
+                            Web Design	</h3>
+                            <div class="builder-section-content">
+                                    <div class="builder-gallery-item has-link" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/smalldel-app-mapping-application-for-architects-developers/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/summarypic-1024x817.jpg&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            The Smalldel Project					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>The ultimate site analysis and conceptual design tool for architects and developers, Smalldel seeks to merge the worlds of mapping and building modeling, with a touch of inspiration from video game design.</p>
+                                        </div>
+                                                        </div>
+                                </div>
+                                        </div>
+                                    <div class="builder-gallery-item has-link last-2" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/whats-happening-app-one-place-to-get-ready-for-all-places/';">
+                                                            <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/powerpointittle-1024x614.png&#039;);"></figure>									<div class="builder-gallery-content">
+                                    <div class="builder-gallery-content-inner">
+                                                            <h4 class="builder-gallery-title">
+                                            What&#8217;s Happening?					</h4>
+                                                                                <div class="builder-gallery-description">
+                                            <p>"AirBnb for Adventurers" - A social media site aiming to equip travelers with information and equipment from locals residents. Startup Weekend San Luis Obispo 2015 project.</p>
+                                                                                </div>
+                                    </div>
+                                                                 </div>
+                                        </div>
+                                </div>
+                        </section>
 				<section id="contact" class="block">
 					<h2 class="section-title"><?php _e( 'Contact' ); ?></h2>
 					<div class="lead">
