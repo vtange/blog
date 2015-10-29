@@ -646,9 +646,11 @@ body.custom-background {
     line-height: 1.5;
 }
 .block {
-    padding: 80px 0;
-    display: block;
-    clear: both;
+  box-sizing: border-box;
+  padding-top:10vh;
+  min-height: 100vh;
+  display: block;
+  clear: both;
 }
 .gallery {
     list-style: none;
