@@ -31,7 +31,6 @@
 		        </h2>
                 <?php if ( ! empty( $options['about'] ) ) : ?>
                     <section id="about" class="block">
-                        <h2 class="section-title"><?php _e( 'About' ); ?></h2>
                             <div class="lead">
                                 <?php
                                     $about_info = apply_filters('the_content', stripslashes_deep( $options['about'] ) );
