@@ -13,6 +13,97 @@
      position:relative;
 }
 
+/* =knives
+---------------------------------------------- */
+
+.logo-container{
+ position: absolute;
+ top:10%;
+ left:10%;
+ width:70%
+}
+.logoknife {
+  position: relative;
+  /* background-size:83%; */
+  /* background-position: 100% 40%; */
+  height: 100vw;
+}
+
+.red-container, .blk-container, .cyan-container, .purp-container, .grn-container, .yllw-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.red-container h1 {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height: 12%;
+z-index:20;
+}
+.red {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height: 12%;
+z-index:20;
+}
+.blk {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height:  12%;
+z-index:10;
+}
+.cyan {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height:  12%;
+}
+
+.purp {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height:  12%;
+}
+
+.grn {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height:  12%;
+}
+
+.yllw {
+position: absolute;
+left: 24.75%;
+top: 20.25%;
+transform-origin: 13.5% 50% 0px;
+transform: rotateZ(-5.8deg);
+  height:  12%;
+}
+
+
+.cyan, .purp, .grn, .yllw {
+  transition: transform 1.2s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+}
+
 
 /*---------------------------------------------------------
  Gallery section (_pages.scss)

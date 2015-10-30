@@ -18,17 +18,34 @@
 	<header class="site-header block" role="banner">
 		<div class="site-branding">
 <!---LOGO-->
-				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img class="logo" src="<?php echo esc_url( $options['logo'] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-				</a>
+<div class="logo-container">
+<article class="logoknife">
+  <div class="red-container">
+    <img class="red" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/red.png"/>
+  </div>
+  <div class="blk-container">
+    <img class="blk" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/black.png"/>
+  </div>
+  <div class="cyan-container">
+    <img class="cyan" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/cyan.png"/>
+  </div>
+  <div class="purp-container">
+    <img class="purp" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/purp.png"/>
+  </div>
+  <div class="grn-container">
+    <img class="grn" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/grn.png"/>
+  </div>
+  <div class="yllw-container">
+    <img class="yllw" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/yello.png"/>
+  </div>
+</article>
+</div>
 <!---LOGO-->
 <!---TITLE-->
-				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+<h2><?php bloginfo( 'description' ); ?></h2>
 <!---TITLE-->
-<!---DESCRIPTION-->
-			    <h2>
-				<?php bloginfo( 'description' ); ?>
-		        </h2>
+<!---ABOUT-->
                 <?php if ( ! empty( $options['about'] ) ) : ?>
                     <section id="about" class="block">
                             <div class="lead">
@@ -39,7 +56,7 @@
                             </div>
                     </section>
                 <?php endif; ?>
-<!---DESCRIPTION-->
+<!---ABOUT-->
             
 	</header>
 
@@ -99,5 +116,6 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="http://vtang.smalldel.com/wp-content/themes/onesie/anim.js"></script>
 </body>
 </html>
