@@ -15,15 +15,19 @@
 
 <body <?php body_class(); ?>>
 <div class="site">
-	<header class="site-header block" role="banner">
+	<header class="site-header" role="banner">
 		<div class="site-branding">
 <!---LOGO-->
 <div class="logo-container">
 <article class="logoknife">
   <div class="red-container">
     <img class="red" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/red.png"/>
+<!---TITLE & NAV-->
+<div class="navblock">
 <h1><?php bloginfo( 'name' ); ?></h1>
 <h2><?php bloginfo( 'description' ); ?></h2>
+</div>
+<!---TITLE & NAV-->
   </div>
   <div class="blk-container">
     <img class="blk" src="http://vtang.smalldel.com/wp-content/themes/onesie/parts/black.png"/>
@@ -43,11 +47,9 @@
 </article>
 </div>
 <!---LOGO-->
-<!---TITLE-->
-<!---TITLE-->
 <!---ABOUT-->
                 <?php if ( ! empty( $options['about'] ) ) : ?>
-                    <section id="about" class="block">
+                    <section id="about">
                             <div class="lead">
                                 <?php
                                     $about_info = apply_filters('the_content', stripslashes_deep( $options['about'] ) );
@@ -57,7 +59,7 @@
                     </section>
                 <?php endif; ?>
 <!---ABOUT-->
-            
+            </div>
 	</header>
 
 	<div id="content" class="site-content">
