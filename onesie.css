@@ -13,16 +13,20 @@
      position:relative;
 }
 #about{
-  margin-top:13%;
-  margin-left:30%;
+  margin-left:auto;
   margin-right:auto;
-  width:30%
+  width:35vw;
+  min-width:360px;
+  background-color:rgba(0,0,0,0.5);
+  border-radius:15px;
+  padding:2.5vw;
 }
 .navblock {
 text-align:left;
 position: relative;
-top:10vh;
-left:3vw;
+top:5vw;
+left:35vw;
+max-width:50vw;
 transform-origin: 13.5% 50% 0px;
 transform: rotateZ(-5.8deg);
 z-index:20;
@@ -30,6 +34,16 @@ z-index:20;
 .navblock h1{
 font-size:6em;
 }
+.navblock h1, .navblock h2, .navblock h3{
+text-shadow: 1px 1px 2px rgba(255,200,200,0.400);
+}
+.skip-links li {
+ display:inline-block;
+ padding:0 2em 0 2em;
+ background:#000;
+}
+
+
 
 /* =knives
 ---------------------------------------------- */
@@ -306,20 +320,6 @@ hr {
 /* Text elements */
 p {
     margin-bottom: 1.5em;
-}
-ul, ol {
-    margin: 0 0 1.5em 3em;
-}
-ul {
-    list-style: disc;
-}
-ol {
-    list-style: decimal;
-}
-li > ul,
-li > ol {
-    margin-bottom: 0;
-    margin-left: 1.5em;
 }
 dt {
     font-weight: bold;
@@ -733,7 +733,10 @@ body.custom-background {
     margin-right: -0.25em; /* Adjusts for spacing */
 }
 .site-branding {
+    position:relative;
     display: inline-block;
+    margin-top:30%;
+    z-index:3;
 }
 .site-header h1,
 .site-header h2,
