@@ -21,12 +21,26 @@
   border-radius:15px;
   padding:2.5vw;
 }
+.min-padding{
+  position:relative;
+  left:-19vw;
+  top:1vw;
+  display:inline-block;
+  height:13vw;
+  width:13vw;
+  border-radius:50%;
+  /*background: url(http://vtang.smalldel.com/wp-content/uploads/2015/04/1403760_10202784694231965_8598438404256207922_o.jpg) center;*/
+  background-size:contain;
+}
+.name-title-links{
+  display:inline-block;
+}
 .navblock {
 text-align:left;
 position: relative;
-top:5vw;
-left:35vw;
-max-width:50vw;
+top:3vw;
+left:22vw;
+max-width:100vw;
 transform-origin: 13.5% 50% 0px;
 transform: rotateZ(-5.8deg);
 z-index:20;
@@ -37,13 +51,17 @@ font-size:6em;
 .navblock h1, .navblock h2, .navblock h3{
 text-shadow: 1px 1px 2px rgba(255,200,200,0.400);
 }
+.skip-links{
+ position:relative;
+ left:-50px;
+}
 .skip-links li {
  display:inline-block;
- padding:0 2em 0 2em;
- background:#000;
+ padding:0em 2em 0em 2em;
 }
-
-
+.skip-links a:not(:last-child)  {
+ border-right:2px solid white;
+}
 
 /* =knives
 ---------------------------------------------- */
@@ -74,6 +92,7 @@ transform: rotateZ(-5.8deg);
   height:  30vw;
   min-height:200px;
 z-index:7;
+overflow:hidden;
 }
 .blk {
 position: absolute;
@@ -84,6 +103,7 @@ transform: rotateZ(-5.8deg);
   height:  30vw;
   min-height:200px;
 z-index:4;
+overflow:hidden;
 }
 .cyan {
 position: absolute;
@@ -128,6 +148,7 @@ transform: rotateZ(-5.8deg);
 
 .cyan, .purp, .grn, .yllw {
   transition: transform 1.2s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+overflow:hidden;
 }
 
 
@@ -801,7 +822,7 @@ body.custom-background {
     color: #999999;
 }
 .gallery figcaption .genericon:hover {
-    color: #f23e2f;
+    color: #2fb299;
 }
 .site-footer {
     margin-bottom: 40px;
