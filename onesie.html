@@ -17,7 +17,7 @@
 
 <body <?php body_class(); ?>>
 <div class="site">
-	<header class="site-header" role="banner">
+	<header class="site-header" id="home" role="banner">
 <!---LOGO-->
 <div class="logo-container">
 <article class="logoknife">
@@ -29,10 +29,10 @@
 <div class="min-padding"></div><div class="name-title-links">
 <h1><?php bloginfo( 'name' ); ?></h1><h2><?php bloginfo( 'description' ); ?></h2>
                 <ul class="skip-links">
-                  <a href="#" class="link"><li><h3>Home</h3></li></a>
-                  <a href="#" class="link"><li><h3>Projects</h3></li></a>
-                  <a href="#" class="link"><li><h3>Skills</h3></li></a>
-                  <a href="#" class="link"><li><h3>Contact</h3></li></a>
+                  <a href="#home" class="link"><li><h3>Home</h3></li></a>
+                  <a href="#projects" class="link"><li><h3>Projects</h3></li></a>
+                  <a href="#skills" class="link"><li><h3>Skills</h3></li></a>
+                  <a href="#contact" class="link"><li><h3>Contact</h3></li></a>
                </ul>
 </div>
 </div>
@@ -75,7 +75,7 @@
 
 <!---2ND SECTION-->
 
-	<div id="content" class="site-content"><!--BACKGROUND-->
+	<div id="projects" class="site-content"><!--BACKGROUND-->
 
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
@@ -106,6 +106,7 @@
                                                                  </div>
                                         </div>
                                 </div>
+		</main><!-- #main -->
                         </section>
 				<section id="contact" class="block">
 					<h2 class="section-title"><?php _e( 'Contact' ); ?></h2>
@@ -117,20 +118,17 @@
                         <?php echo do_shortcode('[si-contact-form form="1"]'); ?>
 					</div>
 				</section>
-			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			© Victor Tang 2015
-			<a id="up" class="genericon genericon-collapse" href="#page" title="<?php _e('Back to top'); ?>"></a>
+			<a id="up" class="genericon genericon-collapse" href="#home" title="<?php _e('Back to top'); ?>"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
-
+</div><!-- #page -->
 <script type="text/javascript" src="http://vtang.smalldel.com/wp-content/themes/onesie/anim.js"></script>
 </body>
 </html>

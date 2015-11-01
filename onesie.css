@@ -73,7 +73,8 @@ text-shadow: 1px 1px 2px rgba(255,200,200,0.400);
  border-right:2px solid white;
 }
 
-#content {
+#projects {
+padding-top:10vh;
 position:relative;
 background:#00000A;
 z-index:5;
@@ -725,17 +726,12 @@ a:active {
     margin: 0.8075em 0;
 }
 .site-main .gallery {
-    margin-bottom: 1.5em;
 }
 .gallery-caption {
 }
 .site-main .gallery a img {
-    border: none;
-    height: auto;
-    max-width: 100%;
 }
 .site-main .gallery dd {
-    margin: 0;
 }
 .site-main .gallery-columns-4 .gallery-item {
 }
@@ -868,7 +864,8 @@ body.custom-background {
     color: #2fb299;
 }
 .site-footer {
-    margin-bottom: 40px;
+    background:#00000A;
+    padding-bottom: 40px;
 }
 #up {
     float: right;
