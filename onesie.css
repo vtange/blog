@@ -84,6 +84,12 @@ width:70%;
 margin:auto;
 z-index:6;
 }
+.builder-gallery-section-title {
+        text-align:center;
+	margin-bottom:8rem;
+	text-transform: uppercase;
+}
+
 .summary-text{
 position:relative;
 top:-10em;
@@ -122,7 +128,7 @@ text-align:center;
   bottom: 0;
   left: 0;
 /* cropper */
-  width:99vw;
+  width:98.9vw;
   height:99vh;
   overflow:hidden;
 }

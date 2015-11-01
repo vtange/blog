@@ -46,6 +46,13 @@ function initKnife() {
        maxFont   : 48.25,
        fontRatio : 100
     });
+    $('.logo-container').flowtype({
+       minimum   : 100,
+       maximum   : 2000,
+       minFont   : 8,
+       maxFont   : 48.25,
+       fontRatio : 100
+    });
 };
 $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
