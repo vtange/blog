@@ -84,7 +84,11 @@ width:70%;
 margin:auto;
 z-index:6;
 }
-
+.summary-text{
+display:inline-block;
+padding:5%;
+width:30%;
+}
 
 
 /* =knives
@@ -228,8 +232,8 @@ animation-delay: 1.6s;
 -------------------------------------------------------- */
 
 .builder-gallery-item {
-	margin-bottom: 8px;
-	margin-bottom: 0.8rem;
+	margin-bottom: 80px;
+	margin-bottom: 8rem;
 	font-size: 14px;
 	font-size: 1.4rem;
 }
