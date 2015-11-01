@@ -11,7 +11,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="wp-content/themes/onesie/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="wp-content/themes/onesie/flowtype.js"></script>
-
+<link rel="stylesheet" type="text/css" href="wp-content/themes/onesie/font-awesome/css/font-awesome.min.css"/>
 <?php wp_head(); ?>
 </head>
 
@@ -135,6 +135,8 @@
                             </div>
                         </section>
                 </main><!-- #main -->
+            </div><!-- #primary -->
+	</div><!-- #content -->
 				<section id="contact" class="block">
 					<h2 class="section-title"><?php _e( 'Contact' ); ?></h2>
 					<div class="lead">
@@ -145,8 +147,7 @@
                         <?php echo do_shortcode('[si-contact-form form="1"]'); ?>
 					</div>
 				</section>
-		</div><!-- #primary -->
-	</div><!-- #content -->
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
