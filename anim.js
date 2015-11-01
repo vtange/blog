@@ -50,9 +50,5 @@ function initKnife() {
 $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
 
-
-    
-    
-    initKnife();
   //end of function
 })();
