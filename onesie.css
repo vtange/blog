@@ -102,7 +102,7 @@ z-index:5;
   left: 0;
   width:99vw;
   height:99vh;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 .red {
 position: absolute;
