@@ -320,9 +320,12 @@ animation-delay: 1.6s;
 	width: 0.8333333333%;
 }
 
+
+/* determines size of gallery pics*/
 @media screen and (min-width: 800px) {
 	.builder-gallery-columns-1 .builder-gallery-item {
-		width: 100%;
+		width: 50%;
+		display:inline-block;
 	}
 
 	.builder-gallery-columns-2 .builder-gallery-item {
