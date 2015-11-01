@@ -90,11 +90,12 @@ z-index:6;
 	text-transform: uppercase;
 }
 
+.one-project > *{
+vertical-align:middle;
+}
+
 .summary-text{
-position:relative;
-top:-10em;
 display:inline-block;
-padding:5%;
 width:40%;
 }
 .project-split{
@@ -401,7 +402,6 @@ hr {
 
 /* Text elements */
 p {
-    margin-bottom: 1.5em;
 }
 dt {
     font-weight: bold;
