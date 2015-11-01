@@ -85,16 +85,22 @@ margin:auto;
 z-index:6;
 }
 .summary-text{
+position:relative;
+top:-10em;
 display:inline-block;
 padding:5%;
-width:30%;
+width:40%;
 }
 .project-split{
-margin-top:8rem;
-margin-bottom:8rem;
-padding:.005%;
+margin-top:10rem;
+margin-bottom:15rem;
 border:3px solid red;
 }
+
+.site-info{
+text-align:center;
+}
+
 
 /* =knives
 ---------------------------------------------- */
@@ -237,8 +243,6 @@ animation-delay: 1.6s;
 -------------------------------------------------------- */
 
 .builder-gallery-item {
-	margin-bottom: 80px;
-	margin-bottom: 8rem;
 	font-size: 14px;
 	font-size: 1.4rem;
 }
