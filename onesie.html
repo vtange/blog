@@ -94,7 +94,7 @@
 
 				<div class="one-project">
 
-                                    <div class="builder-gallery-item has-link" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/smalldel-app-mapping-application-for-architects-developers/';">
+                                    <div class="builder-gallery-item has-link">
                                         <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/summarypic-1024x817.jpg&#039;);"></figure>									                   <div class="builder-gallery-content">
                                                 <div class="builder-gallery-content-inner">
                                 <h4 class="builder-gallery-title">The Smalldel Project</h4>
@@ -116,7 +116,7 @@
 <div class="project-split">
 </div>
 				<div class="one-project">
-                                    <div class="builder-gallery-item has-link last-2" onclick="window.location.href = 'http://vtang.smalldel.com/portfolio/whats-happening-app-one-place-to-get-ready-for-all-places/';">
+                                    <div class="builder-gallery-item has-link last-2">
                                         <figure class="builder-gallery-image" style="background-image: url(&#039;http://vtang.smalldel.com/wp-content/uploads/2015/04/powerpointittle-1024x614.png&#039;);"></figure>									                <div class="builder-gallery-content">
                                                 <div class="builder-gallery-content-inner">
                                     <h4 class="builder-gallery-title">What&#8217;s Happening?</h4>
@@ -143,8 +143,20 @@
                 </main><!-- #main -->
             </div><!-- #primary -->
 	</div><!-- #content -->
+				<section id="skills" class="block">
+					<h1 class="section-title"><?php _e( 'Skills' ); ?></h1>
+					<div class="lead">
+						<?php
+							$contact_info = apply_filters('the_content', stripslashes_deep( $options['message'] ) );
+							echo $contact_info;
+						?>
+					</div>
+				</section>
+
+
+
 				<section id="contact" class="block">
-					<h2 class="section-title"><?php _e( 'Contact' ); ?></h2>
+					<h1 class="section-title"><?php _e( 'Contact' ); ?></h1>
 					<div class="lead">
 						<?php
 							$contact_info = apply_filters('the_content', stripslashes_deep( $options['contact'] ) );
