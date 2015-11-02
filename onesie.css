@@ -115,7 +115,18 @@ text-align:center;
   width:35vw;
   min-width:300px;
 }
-#skills {
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+.slide {
+  position: relative;
+}
+#skills:before {
     background: 
         /* dark blue */
         linear-gradient(
@@ -125,7 +136,10 @@ text-align:center;
         url(http://vtang.smalldel.com/wp-content/uploads/2015/11/DSCN6690.jpg);
     background-size: cover;   /*responsive width-wise, no js */
     background-repeat: no-repeat;
-    background-position: center bottom.
+    background-position: center bottom;
+    background-attachment: fixed;
+    transform: translateZ(-1px) scale(1);
+    z-index:-1;
 }
 
 #skills .lead p {
