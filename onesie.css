@@ -1,5 +1,8 @@
 /* =Onesie custom
 ---------------------------------------------- */
+*{
+    box-sizing: border-box;
+}
 
 #fscf_captcha_refresh1{
      position:relative;
