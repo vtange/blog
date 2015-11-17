@@ -103,6 +103,16 @@ display:inline-block;
 width:40%;
 padding-left:5%;
 }
+.project-description span{
+    display: inline-block;
+    background-color:crimson;
+    padding:5px;
+    margin-right:5px;
+    margin-bottom:5px;
+    border-radius: 3px;
+}
+
+
 .project-split{
 margin-top:12rem;
 margin-bottom:12rem;
