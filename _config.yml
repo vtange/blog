@@ -1,18 +1,14 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
-title: Hexo
+title: Victor Tang
 subtitle:
 description:
-author: John Doe
+author: Victor Tang
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.vtange.net
+url: http://www.vtange.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -62,8 +58,21 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: false
+original-md:
+
 ## Themes: https://hexo.io/themes/
 theme: casper
+
+### EDIT MODE
+markdown_edit: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
