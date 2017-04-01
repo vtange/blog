@@ -1,3 +1,6 @@
 [submodule "themes/casper"]
 	path = themes/casper
 	url = https://github.com/vtange/casper
+[submodule "make-svg"]
+	path = make-svg
+	url = https://github.com/vtange/make-svg
