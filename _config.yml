@@ -72,7 +72,7 @@ original-md:
 theme: casper
 
 ### EDIT MODE
-markdown_edit: true
+markdown_edit: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
