@@ -3,12 +3,17 @@ title: Victor Tang
 subtitle:
 description:
 author: Victor Tang
+bio: "Engineer @ Akamai - I also build web-based tools, games and interesting experiences."
 language:
 timezone:
 
+google_analytics:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.vtange.net
+avatar: https://en.gravatar.com/userimage/81829932/8691582a2e6a7799db4c14a969fbe603.png?size=200
+logo: //blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png
+favicon: 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
