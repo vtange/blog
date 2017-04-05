@@ -12,10 +12,11 @@ google_analytics:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.vtange.net
 avatar: https://en.gravatar.com/userimage/81829932/8691582a2e6a7799db4c14a969fbe603.png?size=200
-logo: //blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png
-favicon: 
+logo: fonts/logo.png
+favicon: fonts/favicon.png
 root: /
-permalink: :year/:month/:day/:title/
+portfolio: works
+permalink: :title/ ##:year/:month/:day/ old
 permalink_defaults:
 
 # Directory
