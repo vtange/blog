@@ -15,9 +15,33 @@ avatar: https://en.gravatar.com/userimage/81829932/8691582a2e6a7799db4c14a969fbe
 logo: fonts/logo.png
 favicon: fonts/favicon.png
 root: /
-portfolio: works
 permalink: :title/ ##:year/:month/:day/ old
 permalink_defaults:
+featured:
+  - title: See my works
+    desc: "A gallery of the various apps and design work I've done at various stages in my career"
+    multi_url:
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/gxx0rmutpczk8fv0vodq.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/gwl76sq07wze0cuuykdz.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/qbgim9p9ervkkxqrqjej.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/ri3qe7vg5ldbcu4l1rnq.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/egjehu0yamywhk8ke0wa.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/mlpbzhisax8kdtrsaxuu.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/ftxrst42nebekzhunr2d.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/hi12fjlvazyjmnqnrfjp.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/lbweuszj5mblgdhma1aj.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/lainicav200larnipqgk.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/hrmewamnwo9vij01w212.jpg"
+      - "http://res.cloudinary.com/dmj8qtant/image/upload/c_thumb,g_face,h_275,w_400/v1452900630/qxlepewnyqaopzt0osgl.jpg"
+    mini_url:
+    bg_url:
+    url: works
+#  - title: 
+#    ctr_x: 50
+#    ctr_y: 70
+#    url: 
+#  - title: 
+#    url: 
 
 # Directory
 source_dir: source

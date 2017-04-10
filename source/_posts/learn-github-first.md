@@ -1,3 +1,9 @@
+---
+title: Learn Git First
+date:
+tags: [tag1,tag2]
+---
+
 So for whatever reason, you've decided that you want to make the cool things on the internet everyone loves surfing through and using so much. You want to become a web developer. Front end or back end? Doesn't matter. Don't know where to start?
 
 Step One: Learn Github
