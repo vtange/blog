@@ -96,7 +96,6 @@ marked:
   breaks: true
   smartLists: true
   smartypants: false
-original-md:
 
 ## Themes: https://hexo.io/themes/
 theme: casper
